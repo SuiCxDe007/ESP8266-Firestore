@@ -30,8 +30,8 @@ void loop() {
   
       HTTPClient http;
       http.begin(serverName);
-      String id="23";
-      String location="dead";
+      String id="";
+      String location="";
       http.addHeader("Content-Type", "application/json");
       int httpResponseCode = http.POST("{\"id\":\"" + id + "\",\"location\":\"" + location + "\"}");
       Serial.print("HTTP Response code: ");
